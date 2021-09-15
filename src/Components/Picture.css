@@ -1,0 +1,7 @@
+.grid_item {
+  transition: transform 0.2s;
+}
+
+.grid_item:hover {
+  transform: scale(1.1);
+}

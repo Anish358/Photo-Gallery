@@ -1,6 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Paper } from "@material-ui/core";
+import "./Picture.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -16,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 const Picture = ({ pic }) => {
   const classes = useStyles();
   return (
-    <Grid item xs>
+    <Grid className="grid_item" item xs>
       <Paper className={classes.paper}>
         <img src={pic.urls.thumb} alt="" />
       </Paper>
